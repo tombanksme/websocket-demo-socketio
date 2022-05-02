@@ -1,0 +1,14 @@
+{
+	"name": "websocket-demo-socketio",
+	"version": "1.0.0",
+	"description": "A demo application",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js"
+	},
+	"author": "Thomas Banks <thomas@tombanks.me>",
+	"license": "MIT",
+	"dependencies": {
+		"socket.io": "^4.5.0"
+	}
+}

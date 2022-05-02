@@ -1,0 +1,21 @@
+config:
+    target: 'http://localhost:8080'
+    phases:
+        - duration: 10
+          arrivalRate: 20
+        - duration: 100
+          arrivalRate: 100
+        - duration: 10
+          arrivalRate: 20
+    engines:
+        socketio-v3: {}
+
+scenarios:
+    - engine: socketio-v3
+      flow:
+          - think: 1
+          - loop:
+                - emit:
+                      channel: 'echo'
+                      data: 'Hello world!'
+            count: 10
