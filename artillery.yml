@@ -13,9 +13,9 @@ config:
 scenarios:
     - engine: socketio-v3
       flow:
-          - think: 1
           - loop:
                 - emit:
                       channel: 'echo'
                       data: 'Hello world!'
+                - think: 5
             count: 10
